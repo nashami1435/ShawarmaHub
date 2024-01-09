@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(112, 94, 61);
+}
+
+.top-header {
+    background-color: hsl(0, 0%, 20%);
+    overflow: hidden;
+}
+
+h1 {
+    background-color: bisque;
+    color: black;
+}
+
+.top-header a {
+    float: left;
+    color: hsl(20, 20%, 80%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+
+.top-header a:hover {
+    background-color: hsl(0, 0, 80%);
+    color: hsl(20, 20%, 100%);
+    transition: color 0.5s;
+}
+
+.gallery img {
+    width: 512px;
+    height: 512px;
+    border-radius: 2px;
+}
+
+.gallery-item p {
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.gallery-item {
+    background-color: rgba(25, 25, 25, 0.5);
+    height: 612px;
+    width: 512px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 1px black;
+}
