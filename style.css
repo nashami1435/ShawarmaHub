@@ -1,5 +1,14 @@
 body{
-    background-color: rgb(112, 94, 61);
+    background-color: rgba(112, 94, 61, 0.6);
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.creativemarket.com%2F0.1.0%2Fps%2F6888226%2F1820%2F1213%2Fm1%2Ffpnw%2Fwm1%2Fgpf83vd92hxe2u7qqhpf3w5ruckay06pzvppukkwyoayz9uy3ud7tpiqkpt6eqva-.jpg%3F1566922872%26s%3D0edda18b094aae6145017ac612f6e7ca&f=1&nofb=1&ipt=bcd7ccb978f8bb01d2d7b58d77a0ad65dbdc7d1407138bef2963c4034ec41758&ipo=images');
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .top-header {
@@ -8,8 +17,12 @@ body{
 }
 
 h1 {
-    background-color: bisque;
-    color: black;
+    background-color: rgb(71, 59, 44);
+    color: rgb(255, 248, 187);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-header a {
@@ -19,19 +32,28 @@ h1 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.5s;
+    transition: color 0.25s;
+    background-color: hsl(0, 0%, 30%);
 }
 
 .top-header a:hover {
     background-color: hsl(0, 0, 80%);
     color: hsl(20, 20%, 100%);
-    transition: color 0.5s;
+    transition: color 0.25s;
+}
+
+.top-header a:active {
+    background-color: hsl(0, 0, 100%);
+    color: hsl(20, 20%, 50%);
+    transition: color 0.25s;
 }
 
 .gallery img {
     width: 512px;
     height: 512px;
-    border-radius: 2px;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 2px 3px 1px black;
 }
 
 .gallery-item p {
@@ -46,4 +68,68 @@ h1 {
     width: 512px;
     border-radius: 15px;
     box-shadow: 2px 3px 1px black;
+    float: left;
+    margin-left: 15px;
+    padding: 5px;
+    
+}
+
+
+.menu-container {
+    align-items: center;
+    display: flex;
+    width: 512px;
+    height: 750px;
+    border-radius: 15px;
+    margin: 10px;
+    gap: 50px;
+    
+}
+
+
+
+.menu-item img{
+    width: 512px;
+    height: 512px;   
+}
+
+.menu-item {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 15px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 15px;
+    
+}
+
+.menu-item a {
+    text-decoration: none;
+    background-color: hsl(140, 50%, 45%);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+    transition: background-color .2s;
+}
+
+.menu-item a:hover {
+    background-color: hsl(140, 50%, 65%);
+    transition: background-color .2s;
+    color: rgb(215, 255, 220);
+}
+
+#price {
+    font-size: 36px;
+    text-align: right;
+    font-weight: bolder;
+}
+#name {
+    font-size: 28px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#description {
+    font-size: 18px;
 }
